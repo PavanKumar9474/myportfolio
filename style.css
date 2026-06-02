@@ -1,33 +1,124 @@
 *{
-	background-color: gray;
-	box-sizing: border-box;
-	margin: 0px;
-	padding: 0px;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
 html{
-	scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
-header{
-	background-color: aqua;
-}
+
 body{
-	background-color: green;
+    background:#0f172a;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:#1e293b;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+section{
+    padding:80px;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.hero h3{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:600px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    width:250px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.education-box,
+.contact-box{
+    background:#1e293b;
+    padding:30px;
+    border-radius:10px;
+    max-width:700px;
+    margin:auto;
+}
+
 footer{
-	background-color: blue;
-}
-.headers{
-	display: flex;
-}
-.headers img{
-	width: 8rem;
-	height: 8rem;
-	border-radius: 50%;
-}
-.headers nav{
-	display: flex;
-	gap: 20px;
-	align-items: flex-end;
-	margin-left: 45em;
-	margin-top: 5em;
+    text-align:center;
+    padding:20px;
+    background:#1e293b;
 }
