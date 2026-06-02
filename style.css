@@ -9,32 +9,38 @@ html{
 }
 
 body{
-    background:#0f172a;
+    background:#08122e;
     color:white;
     font-family:Arial, Helvetica, sans-serif;
 }
 
+/* HEADER */
+
 header{
+    background:#1e293b;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:20px 80px;
-    background:#1e293b;
     position:sticky;
     top:0;
 }
 
-.logo{
+.logo-section{
     display:flex;
     align-items:center;
     gap:15px;
 }
 
-.logo img{
-    width:70px;
-    height:70px;
+.logo-section img{
+    width:80px;
+    height:80px;
     border-radius:50%;
     object-fit:cover;
+}
+
+.logo-section h2{
+    color:#38bdf8;
 }
 
 nav{
@@ -43,8 +49,8 @@ nav{
 }
 
 nav a{
-    text-decoration:none;
     color:white;
+    text-decoration:none;
     font-weight:bold;
 }
 
@@ -52,18 +58,17 @@ nav a:hover{
     color:#38bdf8;
 }
 
-section{
-    padding:80px;
-}
+/* HERO */
 
 .hero{
     min-height:90vh;
     display:flex;
     align-items:center;
+    padding:80px;
 }
 
 .hero h1{
-    font-size:60px;
+    font-size:70px;
     margin:10px 0;
 }
 
@@ -80,45 +85,117 @@ section{
 .btn{
     display:inline-block;
     margin-top:20px;
-    padding:12px 25px;
     background:#38bdf8;
     color:white;
     text-decoration:none;
+    padding:12px 24px;
     border-radius:5px;
 }
 
-h2{
-    text-align:center;
-    margin-bottom:40px;
-    color:#38bdf8;
+/* SECTIONS */
+
+section{
+    padding:80px;
 }
+
+section h2{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:40px;
+}
+
+#about p{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+/* CARDS */
 
 .cards{
     display:flex;
     flex-wrap:wrap;
-    gap:20px;
     justify-content:center;
+    gap:20px;
 }
 
 .card{
+    width:250px;
     background:#1e293b;
     padding:25px;
-    width:250px;
-    text-align:center;
     border-radius:10px;
+    text-align:center;
 }
 
-.education-box,
-.contact-box{
+/* EDUCATION */
+
+.edu{
+    max-width:700px;
+    margin:auto;
     background:#1e293b;
     padding:30px;
     border-radius:10px;
-    max-width:700px;
-    margin:auto;
 }
 
+/* CONTACT */
+
+.contact-box{
+    max-width:600px;
+    margin:auto;
+    background:#1e293b;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* FOOTER */
+
 footer{
+    background:#1e293b;
     text-align:center;
     padding:20px;
-    background:#1e293b;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo-section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+        margin-top:10px;
+    }
+
+    nav a{
+        font-size:14px;
+    }
+
+    .hero{
+        min-height:auto;
+        padding:40px 20px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    section{
+        padding:50px 20px;
+    }
+
+    .card{
+        width:100%;
+    }
 }
