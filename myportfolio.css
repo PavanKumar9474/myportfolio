@@ -1,0 +1,33 @@
+*{
+	background-color: gray;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+html{
+	scroll-behavior: smooth;
+}
+header{
+	background-color: aqua;
+}
+body{
+	background-color: green;
+}
+footer{
+	background-color: blue;
+}
+.headers{
+	display: flex;
+}
+.headers img{
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+}
+.headers nav{
+	display: flex;
+	gap: 20px;
+	align-items: flex-end;
+	margin-left: 45em;
+	margin-top: 5em;
+}
