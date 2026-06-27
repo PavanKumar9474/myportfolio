@@ -1,0 +1,93 @@
+.certificates{
+
+padding:120px 0;
+
+}
+
+.certificates h4{
+
+text-align:center;
+
+color:#8b5cf6;
+
+font-size:22px;
+
+}
+
+.certificates h2{
+
+text-align:center;
+
+font-size:48px;
+
+margin:15px 0 60px;
+
+}
+
+.certificate-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.certificate-card{
+
+background:#111827;
+
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.certificate-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 35px rgba(139,92,246,.3);
+
+}
+
+.award{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+color:#8b5cf6;
+
+}
+
+.certificate-card h3{
+
+margin-bottom:10px;
+
+}
+
+.certificate-card p{
+
+color:#cbd5e1;
+
+margin-bottom:15px;
+
+}
+
+.certificate-card span{
+
+background:#8b5cf6;
+
+padding:8px 16px;
+
+border-radius:20px;
+
+}
