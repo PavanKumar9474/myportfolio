@@ -18,11 +18,11 @@ const experience = [
       "Built responsive websites using ReactJS, JavaScript, HTML5, CSS3 and modern UI design principles.",
   },
   {
-    title: "Backend Developer",
-    company: "FastAPI Projects",
+    title: "Fontend web Developer",
+    company: "Mini Projects",
     duration: "2024",
     description:
-      "Created REST APIs, Authentication, CRUD operations, SQLAlchemy ORM and PostgreSQL integration.",
+      "Created a Mini Projects By HTML , CSS , JS.",
   },
 ];
 

@@ -38,13 +38,13 @@ gap:30px;
 
 .skill-card{
 
-background:#111827;
+background:var(--card);
 
 padding:25px;
 
 border-radius:16px;
 
-border:1px solid rgba(255,255,255,.08);
+border:1px solid var(--border);
 
 transition:.3s;
 
@@ -74,7 +74,7 @@ font-weight:600;
 
 height:10px;
 
-background:#1e293b;
+background:var(--panel-2);
 
 border-radius:10px;
 

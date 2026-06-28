@@ -7,23 +7,23 @@ import {
 
 const certificates = [
   {
-    title: "Python Programming",
-    provider: "Udemy",
+    title: "Web Development Intership",
+    provider: "Vaultsphere",
+    year: "2026",
+  },
+  {
+    title: "Advanced Python Programming Workshop",
+    provider: "Coding Club",
     year: "2025",
   },
   {
-    title: "React JS",
-    provider: "Coursera",
+    title: "PowerBI Workshop",
+    provider: "OfficeMaster",
     year: "2025",
   },
   {
-    title: "SQL & PostgreSQL",
-    provider: "Great Learning",
-    year: "2025",
-  },
-  {
-    title: "Git & GitHub",
-    provider: "Infosys Springboard",
+    title: "HTML & CSS",
+    provider: "cursa",
     year: "2025",
   },
 ];

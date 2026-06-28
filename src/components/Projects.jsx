@@ -19,7 +19,7 @@ const projects = [
       "PostgreSQL",
       "JWT"
     ],
-    github: "#",
+    github: "https://github.com/PavanKumar9474/hospital-appointment-system",
     live: "#",
   },
 
@@ -33,7 +33,7 @@ const projects = [
       "FastAPI",
       "SQLite"
     ],
-    github: "#",
+    github: "https://github.com/PavanKumar9474/hostel-grievance-system",
     live: "#",
   },
 
@@ -47,7 +47,7 @@ const projects = [
       "FastAPI",
       "PostgreSQL"
     ],
-    github: "#",
+    github: "https://github.com/PavanKumar9474/smart-exam-seating-system",
     live: "#",
   },
 ];

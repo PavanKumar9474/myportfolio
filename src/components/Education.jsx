@@ -5,21 +5,21 @@ import { FaGraduationCap } from "react-icons/fa";
 const education = [
   {
     degree: "B.Tech - Computer Science & Engineering",
-    institute: "Your College Name",
+    institute: "KUPPAM ENGINEERING COLLEGE",
     year: "2023 - 2027",
     description:
-      "Currently pursuing B.Tech in Computer Science with strong interest in Full Stack Development.",
+      "Currently pursuing B.Tech in Computer Science with strong interest in Python Full Stack Development.",
   },
   {
     degree: "Intermediate",
-    institute: "Your Junior College",
+    institute: "SSGS Junior College",
     year: "2021 - 2023",
     description:
       "Completed Intermediate with Mathematics, Physics and Chemistry.",
   },
   {
     degree: "SSC",
-    institute: "Your School",
+    institute: "SVIS EM HIGH SCHOOL",
     year: "2020 - 2021",
     description:
       "Completed Secondary School Education.",

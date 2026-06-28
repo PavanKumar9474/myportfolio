@@ -37,14 +37,14 @@ function Hero() {
 
           <h3>Hello, I'm</h3>
 
-          <h1>Pavan Kumar</h1>
+          <h1>A Pavan Kumar</h1>
 
           <h2>
 
             <Typewriter
 
               words={[
-                "Python Full Stack Developer",
+                "Full Stack Developer",
                 "React Developer",
                 "FastAPI Developer",
                 "Problem Solver"
@@ -76,15 +76,15 @@ function Hero() {
 
           <div className="socials">
 
-            <a href="#">
+            <a href="https://github.com/PavanKumar9474">
               <FaGithub/>
             </a>
 
-            <a href="#">
+            <a href="https://www.linkedin.com/in/a-pavan-kumar-reddy-b2a431300/">
               <FaLinkedin/>
             </a>
 
-            <a href="#">
+            <a href="mailto:pavanharsha2004@gmail.com">
               <FaEnvelope/>
             </a>
 

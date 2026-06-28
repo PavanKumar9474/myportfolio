@@ -36,7 +36,7 @@ gap:30px;
 
 .certificate-card{
 
-background:#111827;
+background:var(--card);
 
 padding:35px;
 
@@ -46,7 +46,7 @@ text-align:center;
 
 transition:.4s;
 
-border:1px solid rgba(255,255,255,.08);
+border:1px solid var(--border);
 
 }
 
@@ -76,7 +76,7 @@ margin-bottom:10px;
 
 .certificate-card p{
 
-color:#cbd5e1;
+color:var(--muted);
 
 margin-bottom:15px;
 
@@ -84,7 +84,7 @@ margin-bottom:15px;
 
 .certificate-card span{
 
-background:#8b5cf6;
+background:var(--secondary);
 
 padding:8px 16px;
 

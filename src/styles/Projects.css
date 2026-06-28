@@ -38,7 +38,7 @@ gap:35px;
 
 .project-card{
 
-background:#111827;
+background:var(--card);
 
 border-radius:18px;
 
@@ -46,7 +46,7 @@ overflow:hidden;
 
 transition:.4s;
 
-border:1px solid rgba(255,255,255,.08);
+border:1px solid var(--border);
 
 }
 
@@ -84,7 +84,7 @@ margin-bottom:15px;
 
 .project-content p{
 
-color:#cbd5e1;
+color:var(--muted);
 
 line-height:1.7;
 
@@ -106,7 +106,7 @@ margin-bottom:25px;
 
 .tech-stack span{
 
-background:#1e293b;
+background:var(--panel-2);
 
 padding:8px 14px;
 

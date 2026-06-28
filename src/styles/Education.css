@@ -90,7 +90,7 @@ z-index:2;
 
 .education .timeline-content{
 
-background:#111827;
+background:var(--card);
 
 padding:25px;
 
@@ -98,7 +98,7 @@ border-radius:15px;
 
 width:100%;
 
-border:1px solid rgba(255,255,255,.08);
+border:1px solid var(--border);
 
 transition:.3s;
 
@@ -130,7 +130,7 @@ font-size:24px;
 
 .education .timeline-content h5{
 
-color:#cbd5e1;
+color:var(--muted);
 
 margin-bottom:10px;
 
@@ -140,7 +140,7 @@ margin-bottom:10px;
 
 line-height:1.8;
 
-color:#d1d5db;
+color:var(--gray);
 
 }
 

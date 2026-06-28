@@ -12,9 +12,9 @@ height:55px;
 
 border-radius:50%;
 
-background:#8b5cf6;
+background:var(--secondary);
 
-color:white;
+color:#fff;
 
 font-size:20px;
 
@@ -28,7 +28,7 @@ border:none;
 
 cursor:pointer;
 
-box-shadow:0 10px 25px rgba(0,0,0,.3);
+box-shadow:var(--shadow);
 
 transition:.3s;
 
@@ -40,6 +40,6 @@ z-index:999;
 
 transform:translateY(-5px);
 
-background:#6c63ff;
+background:var(--primary);
 
 }

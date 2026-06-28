@@ -60,7 +60,7 @@ font-size:18px;
 
 line-height:1.8;
 
-color:#cbd5e1;
+color:var(--muted);
 
 margin-bottom:20px;
 
@@ -82,7 +82,7 @@ margin-bottom:35px;
 
 .info-card{
 
-background:#111827;
+background:var(--card);
 
 padding:20px;
 
@@ -96,7 +96,7 @@ align-items:center;
 
 transition:.3s;
 
-border:1px solid rgba(255,255,255,.08);
+border:1px solid var(--border);
 
 }
 
@@ -122,7 +122,7 @@ margin:0;
 
 font-size:15px;
 
-color:#cbd5e1;
+color:var(--muted);
 
 }
 

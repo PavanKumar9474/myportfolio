@@ -1,146 +1,90 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import {
   FaBars,
   FaTimes,
-  FaMoon
+  FaMoon,
+  FaSun,
 } from "react-icons/fa";
 
 import profile from "../assets/profile.jpeg";
-
 import "../styles/Navbar.css";
 
 function Navbar() {
+  const [menu, setMenu] = useState(false);
 
-  const [menu,setMenu]=useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.body.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
 
   return (
+    <header className="navbar">
+      <div className="container nav-container">
 
-<header className="navbar">
+        <div className="logo">
+          <img src={profile} alt="profile" />
 
-<div className="container nav-container">
+          <h2>
+            Pavan <span>Kumar</span>
+          </h2>
+        </div>
 
-<div className="logo">
+        <nav className={menu ? "nav-links active" : "nav-links"}>
 
-<img src={profile} alt="profile"/>
+          {[
+            "home",
+            "about",
+            "skills",
+            "projects",
+            "experience",
+            "education",
+            "contact",
+          ].map((item) => (
+            <Link
+              key={item}
+              to={item}
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => setMenu(false)}
+            >
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </Link>
+          ))}
 
-<h2>
+        </nav>
 
-Pavan <span>Kumar</span>
+        <div className="icons">
 
-</h2>
+          <div
+            className="theme-toggle"
+            onClick={() => setDarkMode(!darkMode)}
+          >
+            {darkMode ? <FaSun /> : <FaMoon />}
+          </div>
 
-</div>
+          <div
+            className="menu"
+            onClick={() => setMenu(!menu)}
+          >
+            {menu ? <FaTimes /> : <FaBars />}
+          </div>
 
-<nav className={menu ? "nav-links active":"nav-links"}>
+        </div>
 
-<Link
-to="home"
-spy={true}
-smooth={true}
-duration={500}
-onClick={()=>setMenu(false)}
->
-
-Home
-
-</Link>
-
-<Link
-to="about"
-spy={true}
-smooth={true}
-duration={500}
-onClick={()=>setMenu(false)}
->
-
-About
-
-</Link>
-
-<Link
-to="skills"
-spy={true}
-smooth={true}
-duration={500}
-onClick={()=>setMenu(false)}
->
-
-Skills
-
-</Link>
-
-<Link
-to="projects"
-spy={true}
-smooth={true}
-duration={500}
-onClick={()=>setMenu(false)}
->
-
-Projects
-
-</Link>
-
-<Link
-to="experience"
-spy={true}
-smooth={true}
-duration={500}
-onClick={()=>setMenu(false)}
->
-
-Experience
-
-</Link>
-
-<Link
-to="education"
-spy={true}
-smooth={true}
-duration={500}
-onClick={()=>setMenu(false)}
->
-
-Education
-
-</Link>
-
-<Link
-to="contact"
-spy={true}
-smooth={true}
-duration={500}
-onClick={()=>setMenu(false)}
->
-
-Contact
-
-</Link>
-
-</nav>
-
-<div className="icons">
-
-<FaMoon className="moon"/>
-
-<div
-className="menu"
-onClick={()=>setMenu(!menu)}
->
-
-{menu ? <FaTimes/> : <FaBars/>}
-
-</div>
-
-</div>
-
-</div>
-
-</header>
-
+      </div>
+    </header>
   );
-
 }
 
 export default Navbar;

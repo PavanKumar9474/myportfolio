@@ -32,7 +32,7 @@ return(
 
 <h3>Email</h3>
 
-<p>pavan@example.com</p>
+<p>pavanharsha2004@gmail.com</p>
 
 </div>
 
@@ -46,7 +46,7 @@ return(
 
 <h3>Phone</h3>
 
-<p>+91 9876543210</p>
+<p>+91 6302650118</p>
 
 </div>
 
@@ -60,7 +60,7 @@ return(
 
 <h3>Location</h3>
 
-<p>India</p>
+<p>Guntakal,Anantapur,India</p>
 
 </div>
 
@@ -68,9 +68,9 @@ return(
 
 <div className="social-links">
 
-<a href="#"><FaGithub/></a>
+<a href="https://github.com/PavanKumar9474"><FaGithub/></a>
 
-<a href="#"><FaLinkedin/></a>
+<a href="https://www.linkedin.com/in/a-pavan-kumar-reddy-b2a431300/"><FaLinkedin/></a>
 
 </div>
 

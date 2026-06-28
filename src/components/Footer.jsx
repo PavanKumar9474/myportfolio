@@ -27,7 +27,7 @@ function Footer() {
         <div className="footer-icons">
 
           <a
-            href="https://github.com/YOUR_GITHUB"
+            href="https://github.com/PavanKumar9474"
             target="_blank"
             rel="noreferrer"
           >
@@ -35,14 +35,14 @@ function Footer() {
           </a>
 
           <a
-            href="https://linkedin.com/in/YOUR_LINKEDIN"
+            href="https://www.linkedin.com/in/a-pavan-kumar-reddy-b2a431300/"
             target="_blank"
             rel="noreferrer"
           >
             <FaLinkedin />
           </a>
 
-          <a href="mailto:pavan@example.com">
+          <a href="mailto:pavanharsha2004@gmail.com">
             <FaEnvelope />
           </a>
 

@@ -2,11 +2,11 @@
 
 padding:70px 0;
 
-background:#050d18;
+background:var(--footer-bg);
 
 text-align:center;
 
-border-top:1px solid rgba(255,255,255,.08);
+border-top:1px solid var(--border);
 
 }
 
@@ -32,7 +32,7 @@ margin:auto;
 
 line-height:1.8;
 
-color:#cbd5e1;
+color:var(--muted);
 
 margin-bottom:35px;
 
@@ -62,13 +62,15 @@ justify-content:center;
 
 align-items:center;
 
-background:#111827;
+background:var(--card);
 
 border-radius:50%;
 
 font-size:22px;
 
 transition:.3s;
+
+border:1px solid var(--border);
 
 }
 
