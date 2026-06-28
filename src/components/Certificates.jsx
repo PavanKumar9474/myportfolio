@@ -17,11 +17,6 @@ const certificates = [
     year: "2025",
   },
   {
-    title: "PowerBI Workshop",
-    provider: "OfficeMaster",
-    year: "2025",
-  },
-  {
     title: "HTML & CSS",
     provider: "cursa",
     year: "2025",

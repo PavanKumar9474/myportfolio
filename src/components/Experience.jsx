@@ -18,7 +18,7 @@ const experience = [
       "Built responsive websites using ReactJS, JavaScript, HTML5, CSS3 and modern UI design principles.",
   },
   {
-    title: "Fontend web Developer",
+    title: "Frontend web Developer",
     company: "Mini Projects",
     duration: "2024",
     description:
