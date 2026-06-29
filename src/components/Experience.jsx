@@ -34,8 +34,6 @@ function Experience() {
 
         <h4>Professional Journey</h4>
 
-        <h2>Experience</h2>
-
         <div className="timeline">
 
           {experience.map((item, index) => (

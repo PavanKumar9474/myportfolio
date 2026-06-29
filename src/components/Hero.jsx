@@ -108,7 +108,7 @@ function Hero() {
               className="btn secondary"
             >
 
-              Hire Me
+              Available for Intership
 
               <FaPaperPlane/>
 

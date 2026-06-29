@@ -2,14 +2,23 @@ import "../styles/Skills.css";
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "HTML", level: 95 },
-  { name: "CSS", level: 90 },
-  { name: "JavaScript", level: 88 },
-  { name: "React JS", level: 90 },
-  { name: "Python", level: 95 },
-  { name: "FastAPI", level: 90 },
-  { name: "PostgreSQL", level: 85 },
-  { name: "Git & GitHub", level: 85 },
+  { name: "HTML" },
+  { name: "CSS" },
+  { name: "JavaScript" },
+  { name: "React" },
+  { name: "Python" },
+  { name: "FastAPI" },
+  { name: "PostgreSQL" },
+  { name: "MongoDB" },
+  { name: "SQLAlchemy" },
+  { name: "REST APIs" },
+  { name: "JWT Authentication" },
+  { name: "Docker" },
+  { name: "Git" },
+  { name: "GitHub Actions" },
+  { name: "OpenAI API" },
+  { name: "Google Gemini API" },
+  { name: "Machine Learning Basics" },
 ];
 
 function Skills() {
@@ -50,20 +59,6 @@ function Skills() {
               <div className="skill-title">
 
                 <span>{skill.name}</span>
-
-                <span>{skill.level}%</span>
-
-              </div>
-
-              <div className="progress">
-
-                <motion.div
-                  className="progress-bar"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.level}%` }}
-                  transition={{ duration: 1 }}
-                  viewport={{ once: true }}
-                />
 
               </div>
 

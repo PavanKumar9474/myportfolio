@@ -10,6 +10,27 @@ FaLinkedin
 
 function Contact(){
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const name = form.elements["name"]?.value?.trim();
+    const email = form.elements["email"]?.value?.trim();
+    const subject = form.elements["subject"]?.value?.trim();
+    const message = form.elements["message"]?.value?.trim();
+
+    if (!name || !email || !subject || !message) {
+      alert("Please fill all fields.");
+      return;
+    }
+
+    // Notify you (as requested): show the submitted details.
+    alert(`New contact form submission:\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
+
+    // Optional: reset the form after notifying.
+    form.reset();
+  };
+
 return(
 
 <section id="contact" className="contact">
@@ -76,29 +97,33 @@ return(
 
 </div>
 
-<form className="contact-form">
+<form className="contact-form" onSubmit={handleSubmit}>
 
 <input
-type="text"
-placeholder="Your Name"
+	type="text"
+	placeholder="Your Name"
+	name="name"
 />
 
 <input
-type="email"
-placeholder="Your Email"
+	type="email"
+	placeholder="Your Email"
+	name="email"
 />
 
 <input
-type="text"
-placeholder="Subject"
+	type="text"
+	placeholder="Subject"
+	name="subject"
 />
 
 <textarea
-rows="6"
-placeholder="Your Message"
+	rows="6"
+	placeholder="Your Message"
+	name="message"
 />
 
-<button>
+<button type="submit">
 
 Send Message
 
