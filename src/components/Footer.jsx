@@ -1,79 +1,66 @@
-import "../styles/Footer.css";
-
 import {
   FaGithub,
   FaLinkedin,
   FaEnvelope,
   FaHeart,
 } from "react-icons/fa";
+import { personalInfo } from "../data/portfolioData";
 
 function Footer() {
   const year = new Date().getFullYear();
+  const nameParts = personalInfo.name.split(" ");
+  const firstName = nameParts[0];
+  const lastName = nameParts.slice(1).join(" ");
 
   return (
     <footer className="footer">
-
       <div className="container footer-container">
-
         <h2>
-          Pavan <span>Kumar</span>
+          {firstName} <span>{lastName}</span>
         </h2>
 
-        <p>
-          Python Full Stack Developer passionate about building modern,
-          scalable and responsive web applications.
-        </p>
+        <p>{personalInfo.bio}</p>
 
         <div className="footer-icons">
-
           <a
-            href="https://github.com/PavanKumar9474"
+            href={personalInfo.github}
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub"
           >
             <FaGithub />
           </a>
 
           <a
-            href="https://www.linkedin.com/in/a-pavan-kumar-reddy-b2a431300/"
+            href={personalInfo.linkedin}
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
           >
             <FaLinkedin />
           </a>
 
-          <a href="mailto:pavanharsha2004@gmail.com">
+          <a href={`mailto:${personalInfo.email}`} aria-label="Email">
             <FaEnvelope />
           </a>
-
         </div>
 
         <ul className="footer-links">
-
           <li><a href="#home">Home</a></li>
-
           <li><a href="#about">About</a></li>
-
           <li><a href="#skills">Skills</a></li>
-
           <li><a href="#projects">Projects</a></li>
-
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
-
         </ul>
 
         <div className="copyright">
-
-          Made with <FaHeart className="heart"/> by Pavan Kumar
-
+          Made with <FaHeart className="heart" /> by {personalInfo.name}
           <br />
-
           © {year} All Rights Reserved.
-
         </div>
-
       </div>
-
     </footer>
   );
 }

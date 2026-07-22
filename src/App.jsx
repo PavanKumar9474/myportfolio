@@ -11,17 +11,6 @@ import ScrollTop from "./components/ScrollTop";
 import Footer from "./components/Footer";
 import "./index.css";
 import "./App.css";
-import "./styles/Navbar.css";
-import "./styles/Hero.css";
-import "./styles/About.css";
-import "./styles/Skills.css";
-import "./styles/Projects.css";
-import "./styles/Experience.css";
-import "./styles/Education.css";
-import "./styles/Certificates.css";
-import "./styles/Contact.css";
-import "./styles/Footer.css";
-import "./styles/ScrollTop.css";
 
 function App() {
   return (

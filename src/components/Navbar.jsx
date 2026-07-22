@@ -7,8 +7,8 @@ import {
   FaSun,
 } from "react-icons/fa";
 
+import { personalInfo } from "../data/portfolioData";
 import profile from "../assets/profile.jpeg";
-import "../styles/Navbar.css";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -27,6 +27,10 @@ function Navbar() {
     }
   }, [darkMode]);
 
+  const nameParts = personalInfo.name.split(" ");
+  const firstName = nameParts[0];
+  const lastName = nameParts.slice(1).join(" ");
+
   return (
     <header className="navbar">
       <div className="container nav-container">
@@ -35,7 +39,7 @@ function Navbar() {
           <img src={profile} alt="profile" />
 
           <h2>
-            Pavan <span>Kumar</span>
+            {firstName} <span>{lastName}</span>
           </h2>
         </div>
 
@@ -57,6 +61,7 @@ function Navbar() {
               smooth={true}
               duration={500}
               onClick={() => setMenu(false)}
+              activeClass="active"
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}
             </Link>
@@ -69,6 +74,7 @@ function Navbar() {
           <div
             className="theme-toggle"
             onClick={() => setDarkMode(!darkMode)}
+            aria-label="Toggle theme"
           >
             {darkMode ? <FaSun /> : <FaMoon />}
           </div>
@@ -76,6 +82,7 @@ function Navbar() {
           <div
             className="menu"
             onClick={() => setMenu(!menu)}
+            aria-label="Toggle menu"
           >
             {menu ? <FaTimes /> : <FaBars />}
           </div>

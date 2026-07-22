@@ -1,15 +1,13 @@
-import "../styles/Contact.css";
-
 import {
-FaEnvelope,
-FaPhone,
-FaMapMarkerAlt,
-FaGithub,
-FaLinkedin
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin
 } from "react-icons/fa";
+import { personalInfo } from "../data/portfolioData";
 
-function Contact(){
-
+function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -24,121 +22,89 @@ function Contact(){
       return;
     }
 
-    // Notify you (as requested): show the submitted details.
     alert(`New contact form submission:\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
-
-    // Optional: reset the form after notifying.
     form.reset();
   };
 
-return(
+  return (
+    <section id="contact" className="contact">
+      <div className="container">
+        <div className="section-subtitle">Let's Connect</div>
+        <h2 className="section-title">Contact Me</h2>
 
-<section id="contact" className="contact">
+        <div className="contact-container">
+          <div className="contact-info">
+            <div className="contact-card">
+              <FaEnvelope />
+              <div>
+                <h3>Email</h3>
+                <p>
+                  <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
+                </p>
+              </div>
+            </div>
 
-<div className="container">
+            <div className="contact-card">
+              <FaPhone />
+              <div>
+                <h3>Phone</h3>
+                <p>
+                  <a href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`}>{personalInfo.phone}</a>
+                </p>
+              </div>
+            </div>
 
-<h4>Let's Connect</h4>
+            <div className="contact-card">
+              <FaMapMarkerAlt />
+              <div>
+                <h3>Location</h3>
+                <p>{personalInfo.location}</p>
+              </div>
+            </div>
 
-<h2>Contact Me</h2>
+            <div className="social-links">
+              <a href={personalInfo.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+                <FaGithub />
+              </a>
+              <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <FaLinkedin />
+              </a>
+            </div>
+          </div>
 
-<div className="contact-container">
-
-<div className="contact-info">
-
-<div className="contact-card">
-
-<FaEnvelope/>
-
-<div>
-
-<h3>Email</h3>
-
-<p>pavanharsha2004@gmail.com</p>
-
-</div>
-
-</div>
-
-<div className="contact-card">
-
-<FaPhone/>
-
-<div>
-
-<h3>Phone</h3>
-
-<p>+91 6302650118</p>
-
-</div>
-
-</div>
-
-<div className="contact-card">
-
-<FaMapMarkerAlt/>
-
-<div>
-
-<h3>Location</h3>
-
-<p>Guntakal,Anantapur,India</p>
-
-</div>
-
-</div>
-
-<div className="social-links">
-
-<a href="https://github.com/PavanKumar9474"><FaGithub/></a>
-
-<a href="https://www.linkedin.com/in/a-pavan-kumar-reddy-b2a431300/"><FaLinkedin/></a>
-
-</div>
-
-</div>
-
-<form className="contact-form" onSubmit={handleSubmit}>
-
-<input
-	type="text"
-	placeholder="Your Name"
-	name="name"
-/>
-
-<input
-	type="email"
-	placeholder="Your Email"
-	name="email"
-/>
-
-<input
-	type="text"
-	placeholder="Subject"
-	name="subject"
-/>
-
-<textarea
-	rows="6"
-	placeholder="Your Message"
-	name="message"
-/>
-
-<button type="submit">
-
-Send Message
-
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-</section>
-
-)
-
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              name="email"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              name="subject"
+              required
+            />
+            <textarea
+              rows="6"
+              placeholder="Your Message"
+              name="message"
+              required
+            />
+            <button type="submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Contact;

@@ -1,8 +1,4 @@
-import "../styles/About.css";
-import about from "../assets/about.png";
-
 import { motion } from "framer-motion";
-
 import {
   FaUser,
   FaEnvelope,
@@ -11,64 +7,43 @@ import {
   FaDownload
 } from "react-icons/fa";
 
+import { personalInfo } from "../data/portfolioData";
+import about from "../assets/about.png";
+
 function About() {
   return (
     <section id="about" className="about">
-
       <div className="container about-container">
-
         {/* Left */}
-
         <motion.div
           className="about-image"
-          initial={{ opacity:0,x:-100 }}
-          whileInView={{ opacity:1,x:0 }}
-          transition={{ duration:1 }}
-          viewport={{ once:true }}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
-
           <img src={about} alt="about" />
-
         </motion.div>
 
         {/* Right */}
-
         <motion.div
           className="about-content"
-          initial={{ opacity:0,x:100 }}
-          whileInView={{ opacity:1,x:0 }}
-          transition={{ duration:1 }}
-          viewport={{ once:true }}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
+          <div className="section-subtitle">Who Am I?</div>
+          <h2 className="section-title">About Me</h2>
 
-          <h4>Who Am I?</h4>
-
-          <h2>About Me</h2>
-
-          <p>
-
-            I'm <strong>Pavan Kumar</strong>, a Python Full Stack Developer
-            passionate about building scalable web applications using
-            React, FastAPI, PostgreSQL, HTML, CSS and JavaScript.
-
-          </p>
-
-          <p>
-
-            I enjoy solving real-world problems through clean code,
-            responsive interfaces, and efficient backend systems.
-            I'm continuously learning new technologies to become
-            a better software engineer.
-
-          </p>
+          <p>{personalInfo.bio}</p>
 
           <div className="info-grid">
-
             <div className="info-card">
               <FaUser />
               <div>
                 <h5>Name</h5>
-                <p>Pavan Kumar</p>
+                <p>{personalInfo.name}</p>
               </div>
             </div>
 
@@ -76,7 +51,7 @@ function About() {
               <FaEnvelope />
               <div>
                 <h5>Email</h5>
-                <p>pavan@example.com</p>
+                <p>{personalInfo.email}</p>
               </div>
             </div>
 
@@ -84,7 +59,7 @@ function About() {
               <FaMapMarkerAlt />
               <div>
                 <h5>Location</h5>
-                <p>India</p>
+                <p>{personalInfo.location}</p>
               </div>
             </div>
 
@@ -92,24 +67,17 @@ function About() {
               <FaBriefcase />
               <div>
                 <h5>Availability</h5>
-                <p>Open to Work</p>
+                <p>{personalInfo.availability}</p>
               </div>
             </div>
-
           </div>
 
-          <a href="/resume.pdf" className="resume-btn">
-
+          <a href={personalInfo.resume} download className="resume-btn">
             <FaDownload />
-
             Download Resume
-
           </a>
-
         </motion.div>
-
       </div>
-
     </section>
   );
 }
