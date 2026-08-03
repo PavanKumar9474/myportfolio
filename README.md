@@ -178,51 +178,6 @@ Run
 ```bash
 npm run dev
 ```
-
----
-
-# 📸 Screenshots
-
-## 🏠 Home Page
-
-```
-(Add Screenshot)
-```
-
----
-
-## 👨‍💻 About Section
-
-```
-(Add Screenshot)
-```
-
----
-
-## 🛠 Skills Section
-
-```
-(Add Screenshot)
-```
-
----
-
-## 📂 Projects Section
-
-```
-(Add Screenshot)
-```
-
----
-
-## 📞 Contact Section
-
-```
-(Add Screenshot)
-```
-
----
-
 # 🌟 Portfolio Sections
 
 - Home
@@ -341,11 +296,7 @@ git push origin feature-name
 
 ### 📧 Email
 
-your-email@example.com
-
-### 💼 LinkedIn
-
-https://linkedin.com/in/your-profile
+pavanharsha2004@example.com
 
 ### 🐙 GitHub
 
