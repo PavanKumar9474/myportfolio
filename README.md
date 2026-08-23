@@ -90,7 +90,7 @@ Each project includes:
 - Description
 - Technologies Used
 - GitHub Repository
-- Live Demo (if deployed)
+- Live Demo 
 
 ---
 
