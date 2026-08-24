@@ -102,6 +102,7 @@ Each project includes:
 - SQL
 - JavaScript
 - Machine Learning
+- Artificial intelligence 
 
 ---
 
