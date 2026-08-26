@@ -64,8 +64,8 @@ The website provides visitors with an overview of my technical expertise, comple
 ### Database
 
 - PostgreSQL
-- MongoDB
 - Sql
+- MongoDB
 
 ### Tools
 
