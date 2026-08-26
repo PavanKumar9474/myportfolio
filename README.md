@@ -100,9 +100,6 @@ Each project includes:
 - Python
 - React
 - SQL
-- JavaScript
-- Machine Learning
-- Artificial intelligence 
 
 ---
 
