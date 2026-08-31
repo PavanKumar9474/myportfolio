@@ -289,6 +289,7 @@ git push origin feature-name
 - Docker
 - HTML
 - CSS
+- Sql
 
 ---
 
