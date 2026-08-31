@@ -126,6 +126,7 @@ Each project includes:
 - GitHub Pages
 - Netlify
 - Vercel
+- Render
 
 ---
 
