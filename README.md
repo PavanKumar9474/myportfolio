@@ -53,7 +53,7 @@ The website provides visitors with an overview of my technical expertise, comple
 - HTML5
 - CSS3
 - JavaScript
-- React
+- ReactJS
 
 ### Backend
 
