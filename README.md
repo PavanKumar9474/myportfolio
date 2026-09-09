@@ -188,18 +188,6 @@ npm run dev
 - Resume
 - Contact
 
----
-
-# 📱 Responsive Design
-
-Fully Responsive on
-
-- 💻 Desktop
-- 💻 Laptop
-- 📱 Tablet
-- 📱 Mobile
-
----
 
 # 🎯 Highlights
 
