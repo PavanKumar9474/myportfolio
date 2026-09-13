@@ -72,7 +72,7 @@ function Hero() {
               href="#contact"
               className="btn secondary"
             >
-              Available for Internship
+              Available For Internship
               <FaPaperPlane />
             </a>
           </div>
