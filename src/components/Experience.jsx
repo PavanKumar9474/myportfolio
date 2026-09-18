@@ -7,7 +7,7 @@ function Experience() {
     <section id="experience" className="experience">
       <div className="container">
         <div className="section-subtitle">Professional Journey</div>
-        <h2 className="section-title">Experience</h2>
+        <h2 className="section-title">Experiences</h2>
 
         <div className="timeline">
           {experience.map((item, index) => (
