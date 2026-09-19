@@ -70,7 +70,7 @@ The website provides visitors with an overview of my technical expertise, comple
 ### Tools
 
 - Git
-- GitHub
+- Git Hub
 - Docker
 - VS Code
 
