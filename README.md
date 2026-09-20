@@ -28,7 +28,7 @@ The website provides visitors with an overview of my technical expertise, comple
 
 # ✨ Features
 
-## 🏠 Home
+## 🏠 Home 
 
 - Professional Landing Page
 - Animated Hero Section
