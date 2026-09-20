@@ -20,7 +20,7 @@ Showcasing my projects, skills, experience, and achievements as a Full Stack Dev
 
 # 📖 Overview
 
-My Portfolio is a modern, responsive personal portfolio website developed to showcase my skills, projects, certifications, education, and contact information.
+My Portfolio is a modern, responsive personal portfolio website developed to showcase my skills, projects, certifications, education, and contact information. 
 
 The website provides visitors with an overview of my technical expertise, completed projects, and professional journey.
 
