@@ -80,7 +80,7 @@ The website provides visitors with an overview of my technical expertise, comple
 
 Showcases all major projects including:
 
-- TaskFlow (Todo Application)
+- TaskFlow (ToDo)
 - Hospital Appointment System
 - Library Management System
 - Student Management System
