@@ -58,7 +58,7 @@ function Footer() {
         <div className="copyright">
           Made with <FaHeart className="heart" /> by {personalInfo.name}
           <br />
-          © {year} All Rights Reserved.
+          © {year} All Rights Reserved
         </div>
       </div>
     </footer>
