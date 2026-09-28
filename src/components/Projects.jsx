@@ -48,7 +48,7 @@ function Projects() {
                       rel="noreferrer"
                     >
                       <FaExternalLinkAlt />
-                      Live Demo
+                      Live Demo Here
                     </a>
                   )}
                 </div>
