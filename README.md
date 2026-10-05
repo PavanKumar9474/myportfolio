@@ -35,9 +35,7 @@ The website is designed to showcase my:
 - 🚀 Professional Journey
 
 The main purpose of this portfolio is to provide recruiters, developers, and visitors with a clear overview of my technical expertise, projects, learning journey, and professional interests.
-
 ---
-
 # 🎯 Purpose
 
 The portfolio is designed to:
