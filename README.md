@@ -210,7 +210,6 @@ Each project can include:
 The portfolio contains a dedicated certifications section for displaying completed courses and certifications.
 
 Certification areas include:
-
 - 🐍 Python
 - ⚛️ React.js
 - 🗄️ SQL
