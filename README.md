@@ -70,7 +70,6 @@ The portfolio is designed to:
 The About section provides information about my professional background.
 
 It includes:
-
 - Personal introduction
 - Career objective
 - Education details
