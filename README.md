@@ -107,7 +107,6 @@ Technical skills are organized into different categories.
 
 - Git
 - GitHub
-- Docker
 - VS Code
 - Postman
 
