@@ -213,7 +213,6 @@ Certification areas include:
 - ⚛️ React.js
 - 🗄️ SQL
 - 💻 Web Development
-- 🐳 Docker
 - 🌐 Full Stack Development
 
 ---
