@@ -66,7 +66,7 @@ function Hero() {
               className="btn primary"
             >
               <FaDownload />
-              Download Resume
+              Download Resume 
             </a>
             <a
               href="#contact"
